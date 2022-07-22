@@ -62,3 +62,66 @@ header a {
     justify-content: center;
     flex: 1;
 }
+
+.panelTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px 64px 48px 64px;
+}
+
+.panelTwo h2 {
+    margin-bottom: 36px;
+}
+
+.cardContainer {
+    display: flex;
+    gap: 48px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 125px;
+    gap: 12px;
+}
+
+.cardBox {
+    width: 125px;
+    height: 125px;
+    border: solid 3px #3882F6;
+    border-radius: 10%;
+}
+
+.quotePanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E7EB;
+    padding: 64px;
+
+}
+
+.quote {
+    width: 600px;
+    font-size: 36px;
+    font-weight: 100;
+}
+
+.quoteAuthor {
+    align-self: flex-end;
+}
+
+.actionPanel {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.actionBox {
+    background-color: #3882F6;
+    color: #F9FAF8;
+}
