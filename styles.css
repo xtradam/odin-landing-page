@@ -12,7 +12,6 @@ header {
     background-color: #1F2937;
     padding: 16px 64px 64px 64px;;
     align-items: center;
-    
 
 }
 
@@ -20,6 +19,7 @@ header .left {
     font-size: 24px;
     font-weight: 500;
     color: #F9FAF8;
+    
 }
 
 header ul {
@@ -39,9 +39,12 @@ header a {
 
 .panelOne {
     display: flex;
-    padding: 16px 64px;
+    padding: 16px 64px 64px 64px;
     gap: 32px;
     background-color: #1F2937;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
 
 }
 
@@ -49,10 +52,17 @@ header a {
     display: flex;
     flex-direction: column;
     flex: 1;
+    max-width: 600px;
 }
 
 .panelOne button {
-    width: 50px
+    width: 100px;
+    background-color: #3882F6;
+    border: none;
+    border-radius: 6px;
+    color: #F9FAF8;
+    padding: 6px 10px;
+    font-weight: 900;
 }
 
 .panelOne .right {
@@ -61,6 +71,21 @@ header a {
     align-items: center;
     justify-content: center;
     flex: 1;
+    height: 200px;
+    max-width: 600px;
+}
+
+.panelOne h1 {
+    color: #F9FAF8;
+    font-size: 48px;
+    margin: 0;
+   
+}
+
+.panelOne p {
+    color: #E5E7EB;
+    font-size: 18px;
+    margin: 0 0 8px 0;
 }
 
 .panelTwo {
@@ -69,6 +94,7 @@ header a {
     align-items: center;
     flex-direction: column;
     padding: 16px 64px 48px 64px;
+    flex: 1;
 }
 
 .panelTwo h2 {
@@ -93,19 +119,24 @@ header a {
     height: 125px;
     border: solid 3px #3882F6;
     border-radius: 10%;
+
 }
 
 .quotePanel {
-    display: flex;
-    flex-direction: column;
+    display: flex;    
     align-items: center;
     justify-content: center;
     background-color: #E5E7EB;
     padding: 64px;
+    flex: 1;
 
 }
 
-.quote {
+.quoteBox {
+    display: flex;
+    flex-direction: column;
+}
+.quoteText {
     width: 600px;
     font-size: 36px;
     font-weight: 100;
@@ -113,15 +144,52 @@ header a {
 
 .quoteAuthor {
     align-self: flex-end;
+    font-weight: 500;
 }
 
 .actionPanel {
     display:flex;
     align-items: center;
     justify-content: center;
+    padding: 64px;
+    flex: 1;
 }
 
 .actionBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
     background-color: #3882F6;
     color: #F9FAF8;
+    flex: 1;
+    max-width: 700px;
+    padding: 32px 98px 32px 64px;
+    border-radius: 6px;
+    
+}
+
+.actionLeft h4, .actionLeft p {
+    margin: 0;
+}
+
+
+.actionButton {
+    background-color: #3882F6;
+    border: 2px solid #F9FAF8;
+    border-radius: 5px;
+    color: #F9FAF8;
+    padding: 4px 24px;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F2937;
+    color: #E5E7EB;
+    font-size: 16px;
+    padding: 32px 64px;
+
 }
